@@ -1,0 +1,272 @@
+/* General Styles */
+
+html{
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f0;
+    color: #333333;
+    line-height: 1.7;
+}
+
+
+/* Header */
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #388e3c;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #dcedc8;
+}
+section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.hero{
+    max-width:100%;
+    margin:0;
+    padding:0;
+}
+
+section h2 {
+    color: #2e7d32;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* Hero Section */
+
+.hero {
+
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 650px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-overlay{
+
+    background: rgba(0,0,0,.55);
+
+    width:100%;
+    height:650px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+}
+
+.hero-overlay h2{
+
+    color: white;
+
+    font-size:56px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-overlay p{
+
+    font-size:24px;
+
+    max-width:700px;
+
+    color:white;
+
+}
+
+.button{
+
+    margin-top:35px;
+
+    background:#2E7D32;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+}
+
+.button:hover{
+
+    background:#1b5e20;
+
+}
+/* Gardening Tips */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #2E7D32;
+    padding: 20px 20px 10px;
+    font-size: 24px;
+}
+
+.card p {
+    padding: 0 20px 25px;
+    font-size: 18px;
+}
+/* Contact Section */
+
+.contact-box{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.contact-info,
+.opening-hours{
+    flex:1;
+    min-width:320px;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.contact-info h3,
+.opening-hours h3{
+    color:#2E7D32;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.contact-info p,
+.opening-hours p{
+    margin-bottom:20px;
+    font-size:18px;
+}
+/* Footer */
+
+footer{
+    background:#2E7D32;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:80px;
+}
+
+footer p{
+    margin:10px 0;
+    font-size:17px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .contact-box{
+        flex-direction:column;
+    }
+
+    .hero-overlay h2{
+        font-size:40px;
+    }
+
+    .hero-overlay p{
+        font-size:20px;
+    }
+
+}
